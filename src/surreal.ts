@@ -73,7 +73,7 @@ export class Surreal {
 		const engineName = url.protocol.slice(0, -1);
 		const engine = this.engines[engineName];
 		if (!engine) throw new UnsupportedEngine(engineName);
-
+		console.log('pants')
 		const { prepare, auth, namespace, database } = processConnectionOptions(
 			opts,
 		);
